@@ -1,12 +1,16 @@
 void main()
 {
-  int i=1;
-  int num1=(9*i);
-  for(int i=1;i<=9;i++)
-
-
+  
+  for(int i=1;i<=10;i++)
+  {
+    for(int j=1;j<=10;j++)
     {
-      print("$i*$i=$num1");
+      print("$j*$i=${i*j}");
     }
+    print(' ');
+  }
+
+
+  
   
 }

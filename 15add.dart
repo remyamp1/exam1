@@ -1,8 +1,13 @@
-void add(int num1,int num2)
-{int number=num1+num2;
-  print("total:$number");
+void add(int num1,int num2,callback)
+{
+  int number=num1+num2;
+  callback(number);
 }
 void main()
 {
-  add(10,20 );
+  void Result(int result)
+  {
+    print("The sum is:$result");
+  }
+  add(10,40,Result);
 }

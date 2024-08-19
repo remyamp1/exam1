@@ -2,9 +2,12 @@ void main()
 {
   for(int i=1;i<=100;i++)
   {
-    if (continue<=41)
+    if (i==41)
     {
-      print("number is:$i");
+      continue;
     }
+    
+      print(i);
+    
   }
 }

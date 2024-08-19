@@ -6,8 +6,8 @@ void main()
   print("Enter a String;");
 
   String st=stdin.readLineSync()!;
-  List<String> characters=st.split(' ');
-  int count=characters.fold(1,(acc,char)
+  List<String> characters=st.split("");
+  int count=characters.fold(0, (acc, char)
   {
     return vowels.contains(char)? acc+1:acc;
   });
